@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Pick WIW Shifts",
+  "version": "1.0",
+  "description": "Automates picking shifts on WIW on page reload.",
+  "icons": {
+    "16": "./images/icons16.png",
+    "48": "./images/icons48.png",
+    "128": "./images/icons128.png"
+  },
+  "content_scripts": [
+      {
+          "matches": [
+              "https://appx.wheniwork.com/myschedule"
+          ],
+          "js": [
+              "pick_shifts.js"
+          ]
+      }
+  ]
+}
